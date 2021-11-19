@@ -7,24 +7,13 @@ All you need to do is to paste the code in garter-snake.js into the console. You
 > `javascript:fetch("https://raw.githubusercontent.com/lukasexists/Garter/main/garter-snake.js").then((response) => response.text()).then((responseText) => {eval(responseText)});`
 
 ### Current Speeds
- ###### Anxiety
- Randomly switches from fast to slow.
- 
- ###### Snail
- FFFFFFooooooooooooooorrrrrrrrrrrr iiiiiiiiiiiiidddddddddddddiiiiiiiiiiiiiiiiiooooooooooooootttttttttttssssssssssss..............
- 
- ###### Zzz...
- zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
- 
- ###### Fly
- Random speed every time you get an apple.
- 
- ###### Car
- car go vroooooooom
- ###### Bullet Speed
- i am speed
+ - Anxiety
+ - Snail
+ - Zzz...
+ - Fly
+ - Car
+ - Bullet
  
 ### Current Sizes
-
-###### Custom Size
-###### Mini
+ - Custom Size
+ - Mini
