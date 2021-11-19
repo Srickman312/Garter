@@ -8,14 +8,6 @@ snake.cussize = function() {
 
 snake.garter = function() {
   
-  function cussizesel() {
-    var cussize = prompt("Enter custom stage size number") // ask for number stuff, will be made better sometime later
-    while (cussize !== parseInt(cussize, 10).toString()) {
-      cussize = prompt("Bruh just enter a damn number");
-    }
-    return cussize;
-  }
-  
   // STAGE SIZES //
   
   img = new Image; // Custom Stage
