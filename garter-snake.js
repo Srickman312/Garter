@@ -6,6 +6,16 @@ snake.gart02 = function() { // creates mod menu
     }
     return cussize2;
   };
+  
+  function selectNum() {
+    var isNumber = Number.isInteger || function(number){ return !isNaN(parseFloat(n)) && isFinite(n) }
+    
+    var cussize2 = prompt("GARTER SNAKE: Enter custom speed number")
+    while (true !== !isNumber(cussize2)) {
+      var cussize2 = prompt("GARTER SNAKE: That isn't a vaild number");
+    }
+    return cussize2;
+  };
 
   var x0 = document.createElement("BUTTON");
   x0.id = "GarterSet1";
@@ -16,6 +26,18 @@ snake.gart02 = function() { // creates mod menu
   
   x0.addEventListener("click", function() {
      window.cussize = selectCus();
+     window.snake.gart01();
+  });
+  
+  var x1 = document.createElement("BUTTON");
+  x1.id = "GarterSet1";
+  x1.class = "FL0z2d iIs7Af";
+  var y1 = document.createTextNode("Set a Custom Speed");
+  x1.appendChild(y1);
+  document.getElementsByClassName("bZUgDf")[0].appendChild(x1);
+  
+  x1.addEventListener("click", function() {
+     window.cussped = selectNum();
      window.snake.gart01();
   });
 };
@@ -44,7 +66,7 @@ snake.gart01 = function() {
       eval(
         limesarebetter.replace(
           '1.33;',
-          `1.33;case 3:return _soup;case 4:return 2;case 5:return Infinity;case 6:return ${rand};case 7:return 0.1;case 8:return 0.25;`
+          `1.33;case 3:return _soup;case 4:return ${window.cussped};case 5:return 2;case 6:return Infinity;case 7:return ${rand};case 8:return 0.1;case 9:return 0.25;`
         )
       );
 
@@ -101,9 +123,16 @@ snake.garter = function() {
   document.querySelector('#size').appendChild(img);
   
   // SPEEDS //
-    
+  
   img = new Image; // Anxiety
   img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/nervous.png';
+  img.width = 47;
+  img.height = 47;
+  img.class = 'DqMRee SsAred';
+  document.querySelector('#speed').appendChild(img);
+  
+  img = new Image; // Custom
+  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/custom.png';
   img.width = 47;
   img.height = 47;
   img.class = 'DqMRee SsAred';
@@ -146,6 +175,7 @@ snake.garter = function() {
 };
 
 window.cussize = "56"
+window.cussped = "0.75"
 window.snake.garter();
 window.snake.gart01();
 window.snake.gart02();
