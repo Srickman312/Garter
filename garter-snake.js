@@ -6,14 +6,13 @@ snake.gart02 = function() { // creates mod menu
     }
     return cussize2;
   };
-  
+
   var x0 = document.createElement("BUTTON");
   x0.id = "GarterSet1";
   x0.class = "FL0z2d iIs7Af";
   var y0 = document.createTextNode("Set a Custom Stage Size");
   x0.appendChild(y0);
-  var z = document.getElementsByClassName("bZUgDf")[0];
-  z.appendChild(x0);
+  document.getElementsByClassName("bZUgDf")[0].appendChild(x0);
   
   x0.addEventListener("click", function() {
      window.cussize = selectCus();
