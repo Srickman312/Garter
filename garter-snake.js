@@ -1,20 +1,30 @@
-snake.gart02 = function() {
+snake.gart02 = function() { // creates mod menu
   function selectCus() {
-    var cussize2 = prompt("Enter custom stage size number") // ask for number stuff, will be made better sometime later
+    var cussize2 = prompt("GARTER SNAKE: Enter custom level size number")
     while (cussize2 !== parseInt(cussize2, 10).toString()) {
-      var cussize2 = prompt("That isn't a vaild number");
+      var cussize2 = prompt("GARTER SNAKE: That isn't a vaild number");
     }
     return cussize2;
   };
   var x = document.createElement("BUTTON");
   x.id = "GarterSet1";
   x.class = "FL0z2d iIs7Af";
-  var y = document.createTextNode("Set a Custom Stage Size");
+  var y = document.createTextNode("Pause");
   x.appendChild(y);
   var z = document.getElementsByClassName("bZUgDf")[0];
   z.appendChild(x);
   
   x.addEventListener("click", function() {
+     window.alert("GARTER SNAKE: Paused")
+  });
+  
+  var x0 = document.createElement("BUTTON");
+  x0.id = "GarterSet1";
+  x0.class = "FL0z2d iIs7Af";
+  var y0 = document.createTextNode("Set a Custom Stage Size");
+  x0.appendChild(y0);
+  
+  x0.addEventListener("click", function() {
      window.cussize = selectCus();
      window.snake.gart01();
   });
