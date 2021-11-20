@@ -6,6 +6,7 @@ All you need to do is to paste the code in garter-snake.js into the console. You
 
 > `javascript:fetch("https://raw.githubusercontent.com/lukasexists/Garter/main/garter-snake.js").then((response) => response.text()).then((responseText) => {eval(responseText)});`
 
+**NOTE:** This mod will require you to use [this page of Google Snake!](https://www.google.com/fbx?fbx=snake_arcade)
 ### Current Speeds
  - Anxiety
  - Snail
