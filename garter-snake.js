@@ -4,19 +4,23 @@ snake.gart02 = function() {
     function selectCus() {
     var cussize2 = prompt("Enter custom stage size number") // ask for number stuff, will be made better sometime later
     while (cussize2 !== parseInt(cussize2, 10).toString()) {
-      var cussize2 = prompt("Bruh just enter a damn number");
+      var cussize2 = prompt("That isn't a vaild number");
     }
     return cussize2;
   };
   var x = document.createElement("BUTTON");
-  var t = document.createTextNode("Set Custom Stage Size");
-  x.appendChild(t);
   x.id = "GarterSet1";
-  document.body.appendChild(x);
-    
-  document.getElementById("GarterSet1").addEventListener("click", function() {
+  x.class = "FL0z2d iIs7Af";
+  var y = document.createTextNode("Set a Custom Stage Size");
+  x.appendChild(y);
+  var z = document.getElementsByClassName("bZUgDf")[0];
+  z.appendChild(x);
+  
+  selectCus();
+  
+  x.addEventListener("click", function() {
      window.cussize = selectCus();
-      window.snake.gart01();
+     window.snake.gart01();
   });
 };
 
