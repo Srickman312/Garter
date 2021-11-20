@@ -7,6 +7,6 @@ All you need to do is to paste the code in garter-snake.js into the console. You
 `javascript:fetch("https://raw.githubusercontent.com/lukasexists/Garter/main/garter-snake.js").then((response) => response.text()).then((responseText) => {eval(responseText)});`
 
 ### Features
- - Custom Level Size & Snake Speed
- - 6 Custom Speeds
- - 2 Custom Sizes
+ - Custom Level Size & Snake Speed: Make your own suffering modes!
+ - 6 Custom Snake Speeds: Anxiety, Snail, Zzz, Fly, Car, Bullet
+ - 2 Custom Level Sizes: Tiny, Extra Large
