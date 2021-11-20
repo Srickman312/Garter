@@ -1,8 +1,8 @@
 snake.gart02 = function() { // creates mod menu
   function selectCus() {
-    var cussize2 = prompt("GARTER SNAKE: Enter custom level size number")
+    var cussize2 = prompt("GARTER SNAKE: Enter custom level size number. The larger the number, the more squares there will be. Decimals are not allowed here.")
     while (cussize2 !== parseInt(cussize2, 10).toString()) {
-      var cussize2 = prompt("GARTER SNAKE: That isn't a vaild number");
+      var cussize2 = prompt("GARTER SNAKE: That isn't a vaild number. Try again.");
     }
     return cussize2;
   };
@@ -10,9 +10,9 @@ snake.gart02 = function() { // creates mod menu
   function selectNum() {
     var isNumber = Number.isInteger || function(number){ return !isNaN(parseFloat(n)) && isFinite(n) }
     
-    var cussize2 = prompt("GARTER SNAKE: Enter custom speed number")
+    var cussize2 = prompt("GARTER SNAKE: Enter custom speed number. For speed, the higher the number, the faster the snake. Decimals are allowed here.")
     while (true !== !isNumber(cussize2)) {
-      var cussize2 = prompt("GARTER SNAKE: That isn't a vaild number");
+      var cussize2 = prompt("GARTER SNAKE: That isn't a vaild number. Try again.");
     }
     return cussize2;
   };
