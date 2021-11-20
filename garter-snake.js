@@ -1,7 +1,5 @@
-var cussize = "56"
-
 snake.gart02 = function() {
-    function selectCus() {
+  function selectCus() {
     var cussize2 = prompt("Enter custom stage size number") // ask for number stuff, will be made better sometime later
     while (cussize2 !== parseInt(cussize2, 10).toString()) {
       var cussize2 = prompt("That isn't a vaild number");
@@ -15,8 +13,6 @@ snake.gart02 = function() {
   x.appendChild(y);
   var z = document.getElementsByClassName("bZUgDf")[0];
   z.appendChild(x);
-  
-  selectCus();
   
   x.addEventListener("click", function() {
      window.cussize = selectCus();
@@ -74,7 +70,7 @@ snake.gart01 = function() {
           /[a-zA-Z0-9_$]{1,6}=function\(a\){switch\(a\.[a-zA-Z0-9_$]{1,6}\){case 2:return 512;[^]*?256}}/
         )[0].replace(
           '96;',
-          `96;case 3:return ${window.cussize};case 4:return 36;case 5:return 1200;case 6:return 3500;case 7:return 10000;case 8:return 25000;case 9:return 100000;`
+          `96;case 3:return ${window.cussize};case 4:return 36;case 5:return 600;`
         )
       );
     };
@@ -94,6 +90,12 @@ snake.garter = function() {
   
   img = new Image; // Tiny Stage
   img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/tiny.png';
+  img.width = 47;
+  img.height = 47;
+  document.querySelector('#size').appendChild(img);
+    
+  img = new Image; // Extra Large Stage
+  img.src = 'https://raw.githubusercontent.com/lukasexists/GoogleSnakeModAttempt/main/img/xlarge.png';
   img.width = 47;
   img.height = 47;
   document.querySelector('#size').appendChild(img);
@@ -143,6 +145,7 @@ snake.garter = function() {
   document.querySelector('#speed').appendChild(img);
 };
 
+window.cussize = "56"
 window.snake.garter();
 window.snake.gart01();
 window.snake.gart02();
