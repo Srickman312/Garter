@@ -7,7 +7,7 @@ snake.gart02 = function() { // creates mod menu
     return cussize2;
   };
   var x = document.createElement("BUTTON");
-  x.id = "GarterSet1";
+  x.id = "GarterSet0";
   x.class = "FL0z2d iIs7Af";
   var y = document.createTextNode("Pause");
   x.appendChild(y);
