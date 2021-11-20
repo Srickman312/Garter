@@ -6,12 +6,14 @@ snake.gart02 = function() { // creates mod menu
     }
     return cussize2;
   };
+  
+  var z = document.getElementsByClassName("bZUgDf")[0];
+  
   var x = document.createElement("BUTTON");
   x.id = "GarterSet0";
   x.class = "FL0z2d iIs7Af";
   var y = document.createTextNode("Pause");
   x.appendChild(y);
-  var z = document.getElementsByClassName("bZUgDf")[0];
   z.appendChild(x);
   
   x.addEventListener("click", function() {
@@ -23,6 +25,7 @@ snake.gart02 = function() { // creates mod menu
   x0.class = "FL0z2d iIs7Af";
   var y0 = document.createTextNode("Set a Custom Stage Size");
   x0.appendChild(y0);
+  z.appendChild(x);
   
   x0.addEventListener("click", function() {
      window.cussize = selectCus();
