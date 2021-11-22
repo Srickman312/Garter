@@ -20,7 +20,7 @@ snake.gart02 = function() { // creates mod menu
   var x0 = document.createElement("BUTTON");
   x0.id = "GarterSet1";
   x0.class = "FL0z2d iIs7Af";
-  x0.style = "padding:16px 16px; font-size:16px;  display:inline-block; border:none; color:rgb(17,85,204); background-color:rgb(255,0,0); text-align: center; border-radius: 8px";
+  x0.style = "padding:16px 16px; font-size:16px;  display:inline-block; border:none; background-color:rgb(17,85,204); color:rgb(255,255,255); text-align: center; border-radius: 8px";
   var y0 = document.createTextNode("Set a Custom Stage Size");
   x0.appendChild(y0);
   document.getElementsByClassName("bZUgDf")[0].appendChild(x0);
@@ -33,7 +33,7 @@ snake.gart02 = function() { // creates mod menu
   var x1 = document.createElement("BUTTON");
   x1.id = "GarterSet2";
   x1.class = "FL0z2d iIs7Af";
-  x1.style = "padding:16px 16px; font-size:16px;  display:inline-block; border:none; color:rgb(17,85,204); background-color:rgb(255,0,0); text-align: center; border-radius: 8px";
+  x1.style = "padding:16px 16px; font-size:16px;  display:inline-block; border:none; background-color:rgb(17,85,204); color:rgb(255,255,255); text-align: center; border-radius: 8px";
   var y1 = document.createTextNode("Set a Custom Speed");
   x1.appendChild(y1);
   document.getElementsByClassName("bZUgDf")[0].appendChild(x1);
