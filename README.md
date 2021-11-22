@@ -4,7 +4,7 @@ Welcome to Garter, a Google Snake Mod I'm working on. It's meant to eventually b
 also if you wanna help contribute youre welcome to, just dont be a dick ok pls thanks
 
 ### How to Set Up:
-All you need to do is to paste the code in garter-snake.js into the console. You can also set the script below as a bookmark. Then, when you get into Google Snake, click the bookmark to load the mod.
+All you need to do is to paste the code in garter-snake.js into the console. As an alternative, select the text below and drag it into your bookmarks bar.
 
 `javascript:fetch("https://raw.githubusercontent.com/lukasexists/Garter-GoogleSnake/main/garter-snake.js").then((response) => response.text()).then((responseText) => {eval(responseText)});`
 
