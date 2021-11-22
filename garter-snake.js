@@ -33,7 +33,7 @@ snake.gart02 = function() { // creates mod menu
   var x1 = document.createElement("BUTTON");
   x1.id = "GarterSet2";
   x1.class = "FL0z2d iIs7Af";
-  x0.style = "padding:16px 16px; font-size:16px;  display:inline-block; border:none; color:rgb(255,255,255); background-color:rgb(255,0,0); text-align: center";
+  x1.style = "padding:16px 16px; font-size:16px;  display:inline-block; border:none; color:rgb(255,255,255); background-color:rgb(255,0,0); text-align: center";
   var y1 = document.createTextNode("Set a Custom Speed");
   x1.appendChild(y1);
   document.getElementsByClassName("bZUgDf")[0].appendChild(x1);
