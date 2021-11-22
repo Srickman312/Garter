@@ -181,4 +181,3 @@ window.cussped = "0.75"
 window.snake.garter();
 window.snake.gart01();
 window.snake.gart02();
-//poopoo
