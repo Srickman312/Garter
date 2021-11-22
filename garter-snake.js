@@ -10,7 +10,7 @@ snake.gart02 = function() { // creates mod menu
   function selectNum() {
     var isNumber = Number.isInteger || function(number){ return !isNaN(parseFloat(n)) && isFinite(n) }
     
-    var cussize2 = prompt("GARTER SNAKE: Enter custom speed number. For speed, the higher the number, the faster the snake. Decimals are allowed here.")
+    var cussize2 = prompt("GARTER SNAKE: Enter custom speed number. For speed, the lower the number, the faster the snake. Decimals are allowed here.")
     while (true !== !isNumber(cussize2)) {
       var cussize2 = prompt("GARTER SNAKE: That isn't a vaild number. Try again.");
     }
