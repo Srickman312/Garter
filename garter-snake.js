@@ -1,4 +1,4 @@
-snake.gart02 = function() { // creates mod menu
+snake.gart02 = function() { // creates the button elements of the mod menu
   function selectCus() {
     var cussize2 = prompt("GARTER SNAKE: Enter custom level size number. The larger the number, the more squares there will be. Decimals are not allowed here.")
     while (cussize2 !== parseInt(cussize2, 10).toString()) {
