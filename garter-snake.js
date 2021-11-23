@@ -64,11 +64,10 @@ snake.gart01 = function() {
       const a = code.match(new RegExp(
         `this\\.[a-zA-Z0-9_$]{1,6}=[a-zA-Z0-9_$]{1,6}\\*${limename}\\(this\\);`
       ))[0];
-      var rand = Math.random()
       eval(
         limesarebetter.replace(
           '1.33;',
-          `1.33;case 3:return _soup;case 4:return ${window.cussped};case 5:return 2;case 6:return Infinity;case 7:return ${rand};case 8:return 0.1;case 9:return 0.25;`
+          `1.33;case 3:return _soup;case 4:return ${window.cussped};case 5:return 2;case 6:return Infinity;case 7:return ${Math.random()};case 8:return 0.1;case 9:return 0.25;`
         )
       );
 
